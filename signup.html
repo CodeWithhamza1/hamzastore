@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <div id="message"></div>
+    <form onsubmit="signup(event)">
+      <input type="text" id="userName" placeholder="Your Name" autocomplete="off" required>
+      <input type="text" id="signupEmail" placeholder="Email" autocomplete="off" required>
+      <input type="password" id="signupPassword" placeholder="Password" autocomplete="off" required>
+      <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" required>
+      <button type="submit" id="signupbtn">Sign Up</button>
+      <div class="bottom-text">
+        <span>Already have an account? <a href="login.html">Login</a></span>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    let btn = document.getElementById('signupbtn')
+    btn.addEventListener('click', () => {
+      let userName = document.getElementById('userName').value;
+      let name = localStorage.setItem('Username', userName)
+      console.log(userName)
+    })
+  </script>
+  <script>
+    let token = localStorage.getItem('userToken')
+    if (!token) { }
+    else {
+      window.location.href = "welcome.html"
+    }
+  </script>
+</body>
+
+</html>

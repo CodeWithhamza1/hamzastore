@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <div id="message"></div>
+    <form onsubmit="login(event)">
+      <input type="text" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button type="submit">Login</button>
+      <div class="bottom-text">
+        <span>Don't have an account? <a href="signup.html">Sign up</a></span>
+      </div>
+    </form>
+    <div class="bottom-text">
+      <a href="forgot-password.html">Forgot Password?</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    let token = localStorage.getItem('userToken')
+    if (!token) { }
+    else {
+      window.location.href = "welcome.html"
+    }
+  </script>
+</body>
+
+</html>

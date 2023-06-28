@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Store</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="/"><img src="logo.png" alt="Logo"></a></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><button onclick="logout()">Logout</button></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="slide-item">
+                <img src="carousel/image1.jpg" alt="Image 1">
+                <div class="slide-content">
+                    <h3>Best Bicycles In The Town</h3>
+                    <p>Buy Brand New Bicycles To Showoff Your Personality</p>
+                    <button>Buy Now</button>
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="slide-item">
+                <img src="carousel/image2.jpg" alt="Image 2">
+                <div class="slide-content">
+                    <h3>Royle Enfield</h3>
+                    <p>Your New Compitetor Royle Enfield Is Now In Fire!!</p>
+                    <button>Read More</button>
+                    <button>Explore!!</button>
+                </div>
+            </div>
+           <div class="slide-item"><img src="carousel/image3.jpg" alt="Image 3"></div>
+            <div class="slide-item"><img src="carousel/image4.jpg" alt="Image 4"></div>
+            <div class="slide-item"><img src="carousel/image5.jpg" alt="Image 5"></div>
+        </div>
+    </div>
+    
+
+
+    <!-- Feature Section -->
+    <h2 class="feature_text">Hotest Products</h2>
+    <div class="feature">
+        <div class="main_box">
+            <h2>Mobiles</h2>
+            <img src="feature/feature1.jpg" alt="">
+            <p>Get enroll in new mobile phones with 30% discount on every product of Hamza Store</p>
+        </div>
+        <div class="main_box">
+            <h2>Laptops</h2>
+            <img src="feature/feature2.png" alt="">
+            <p>Latest models laptops with brand new kits available in new HP & Dell Company</p>
+        </div>
+        <div class="main_box">
+            <h2>Cars</h2>
+            <img src="feature/feature3.jpg" alt="">
+            <p class="p-3">The Honda City is a subcompact sedan that has been manufactured by the Japanese automobile
+                manufacturer Honda since 1981. Initially, it was a 3-door</p>
+        </div>
+        <div class="main_box">
+            <h2>Headphones</h2>
+            <img src="feature/feature4.jpg" alt="">
+            <p>Headphones have become an essential accessory for many individuals in today's fast-paced,
+                technology-driven world. </p>
+        </div>
+        <div class="main_box">
+            <h2>Bikes</h2>
+            <img src="feature/feature5.jpg" alt="">
+            <p>Beyond the practical benefits, riding a bike offers numerous advantages for personal well-being. It is an
+                excellent form of exercise that engages your muscles</p>
+        </div>
+        <div class="main_box">
+            <h2>Bycycles</h2>
+            <img src="feature/feature6.jpg" alt="">
+            <p>At its core, a cycle is a two-wheeled vehicle driven by human power. Its design has evolved over time,
+                incorporating various features and technologies</p>
+        </div>
+        <div class="main_box">
+            <h2>Airjets</h2>
+            <img src="feature/feature7.jpg" alt="">
+            <p>Air travel has revolutionized the way we explore the world, connecting distant destinations and shrinking
+                the barriers of time and distance. </p>
+        </div>
+        <div class="main_box">
+            <h2>Routers</h2>
+            <img src="feature/feature8.jpg" alt="">
+            <p>In the vast landscape of the digital world, routers are the unsung heroes that keep us connected These
+                unassuming devices play a vital role</p>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Welcome to our Store</h1>
+            <p>Welcome to our online store! We are your one-stop destination for a wide range of products, including automobiles, mobiles, books, cars, bikes, and cycles. At our store, you'll find an extensive selection of high-quality items to meet your needs and preferences.
+<br><br>
+                We are excited to offer a special promotion of a whopping 50% discount on all our products. Yes, you heard it right! This incredible discount allows you to enjoy significant savings while shopping for your favorite items.</p>
+            <div class="buttons">
+                <button class="btn">Learn More</button>
+                <button class="btn">Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <div class="contact_container">
+            <div class="contact-content">
+                <form class="contact-form">
+                    <h2>Contact Us</h2>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-image">
+                    <img src="carousel/image3.jpg" alt="Contact Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Mobiles</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Spare Parts</a></li>
+                        <li><a href="#">Routers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>AutoMobile</h3>
+                    <ul>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Bikes</a></li>
+                        <li><a href="#">Cycles</a></li>
+                        <li><a href="#">Tripods</a></li>
+                        <li><a href="#">Airjets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+  <script>
+    let name = localStorage.getItem('Username');
+    let p = document.getElementById('username').innerText = `Welcome ${name}`;
+  </script>
+</body>
+
+</html>
